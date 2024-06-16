@@ -4,6 +4,7 @@ import { useSession } from "next-auth/react";
 import { signOut } from "next-auth/react";
 import axios from "axios";
 import { useState, useEffect } from "react";
+import Navbar from "./Navbar";
 
 export default function Homepage() {
   const { status, data: session } = useSession();
@@ -29,20 +30,9 @@ export default function Homepage() {
   };
 
   return (
-    <div className="p-6">
-      <nav className="flex justify-between">
-        <span className="font-extrabold text-4xl">Finacial Tracker</span>
-        <div className="flex items-center space-x-4">
-          <span className="text-lg">Welcome,{session.user.name}!</span>
-         
-          <button
-            onClick={() => signOut()}
-            className="bg-red-500 text-white px-4 py-2 rounded-md"
-          >
-            Logout
-          </button>
-        </div>
-      </nav>
+    <div className="px-6">
+      
+      
       <hr className="mt-6 mb-6" />
       <div className="flex  flex-col md:flex-row justify-between">
         <div className="w-full md:w-1/3  h-full">

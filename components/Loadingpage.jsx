@@ -1,9 +1,9 @@
-import React from 'react'
-
 const Loadingpage = () => {
   return (
-    <div>Loadingpage</div>
-  )
-}
+    <div className="flex justify-center min-h-[80vh] items-center text-2xl font-bold">
+      Loading.....
+    </div>
+  );
+};
 
-export default Loadingpage
+export default Loadingpage;
