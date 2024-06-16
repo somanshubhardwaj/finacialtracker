@@ -1,11 +1,13 @@
 "use client";
 
 import { useSession } from "next-auth/react";
-import { signOut } from "next-auth/react";
 import axios from "axios";
 import { useState, useEffect } from "react";
-import Navbar from "./Navbar";
-
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import {
+  faReceipt,
+  faFileInvoiceDollar,
+} from "@fortawesome/free-solid-svg-icons";
 export default function Homepage() {
   const { status, data: session } = useSession();
   const [transactions, setTransactions] = useState([]);
@@ -31,13 +33,14 @@ export default function Homepage() {
 
   return (
     <div className="px-6">
-      
-      
       <hr className="mt-6 mb-6" />
       <div className="flex  flex-col md:flex-row justify-between">
         <div className="w-full md:w-1/3  h-full">
           <div className="">
-            <span className="font-bold text-2xl ">Add Transaction</span>
+            <span className="font-bold text-2xl ">
+              <FontAwesomeIcon icon={faReceipt} className="mr-2" />
+              Add Transaction
+            </span>
             <div className="mt-3">
               <form className="">
                 <div className="mb-3">
@@ -82,8 +85,11 @@ export default function Homepage() {
             </div>
           </div>
         </div>
-        <div className="w-full md:w-2/3 md:px-4  h-full">
-          <span className="font-bold text-2xl">Transactions</span>
+        <div className="w-full md:w-2/3 md:px-4  h-full translist md:max-h-[70vh]">
+          <span className="font-bold text-2xl">
+            <FontAwesomeIcon icon={faFileInvoiceDollar} className="mr-2" />
+            Transactions
+          </span>
           <div className="mt-3">
             <table className="min-w-full divide-y divide-gray-200">
               <thead className="bg-gray-50">

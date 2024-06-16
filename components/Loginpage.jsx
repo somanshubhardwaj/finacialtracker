@@ -1,5 +1,7 @@
 "use client";
 import { signIn } from "next-auth/react";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faGoogle } from "@fortawesome/free-brands-svg-icons";
 const Loginpage = () => {
   return (
     <div className="min-h-[70vh] flex justify-center items-center">
@@ -10,6 +12,7 @@ const Loginpage = () => {
           onClick={() => signIn("google")}
           className="bg-indigo-600 hover:bg-indigo-700 text-white font-bold py-2 px-4 rounded"
         >
+          <FontAwesomeIcon icon={faGoogle} className="mr-2" />
           Login with Google
         </button>
       </div>

@@ -1,11 +1,15 @@
 "use client";
 import { signOut, useSession, signIn } from "next-auth/react";
-
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faCoins } from "@fortawesome/free-solid-svg-icons";
 const Navbar = () => {
   const { status, data: session } = useSession();
   return (
     <nav className="flex justify-between px-6 pt-6">
-      <span className="font-extrabold text-4xl">Finacial Tracker</span>
+      <span className="font-extrabold text-4xl">
+        <FontAwesomeIcon icon={faCoins} className="mr-2" />
+        Finacial Tracker
+      </span>
       {status === "authenticated" && (
         <div className="flex items-center">
           <span className="mr-4">Welcome, {session.user.name}</span>
