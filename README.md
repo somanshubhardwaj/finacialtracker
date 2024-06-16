@@ -1,36 +1,66 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# Finance Tracker App
 
-## Getting Started
+## Overview
 
-First, run the development server:
+The Finance Tracker App is a web application built with Next.js, a React framework for server-side rendering. It allows users to track their financial transactions and manage their expenses.
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+### Features
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+1. User Registration and Login: Users can create an account and log in to access their personal finance dashboard.
+2. Dashboard: Users can view an overview of their  expenses.
 
-You can start editing the page by modifying `app/page.js`. The page auto-updates as you edit the file.
+### Installation
 
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
+To run the Finance Tracker App locally, follow these steps:
 
-## Learn More
+1. Clone the repository:
 
-To learn more about Next.js, take a look at the following resources:
+    ```bash
+    git clone https://github.com/your-username/finance-tracker-app.git
+    ```
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+2. Install dependencies:
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
+    ```bash
+    cd finance-tracker-app
+    npm install
+    ```
 
-## Deploy on Vercel
+3. Configure environment variables:
+    - Create a `.env` file in the root directory.
+    - Add the necessary environment variables, such as database connection details and API keys.
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+    ```js
+        MONGODB=mongodburl
+        GOOGLE_CLIENT_ID=googlecientid
+        GOOGLE_CLIENT_SECRET=googlesecret
+        NEXTAUTH_URL=nextauthurl
+        NEXTAUTH_SECRET=secret
+    ```
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+4. Start the development server:
+
+    ```bash
+    npm run dev
+    ```
+
+5. Open [http://localhost:3000](http://localhost:3000) in your browser to access the app.
+
+### Usage
+
+Once the app is running, you can perform the following actions:
+
+- Register a new account or log in with existing credentials.
+- Add transactions
+
+### Contributing
+
+Contributions to the Finance Tracker App are welcome! If you'd like to contribute, please follow these guidelines:
+
+1. Fork the repository and create a new branch for your feature or bug fix.
+2. Make your changes and ensure that the code passes all tests.
+3. Submit a pull request describing your changes and the problem they solve.
+
+### License
+
+The Finance Tracker App is open source and released under the [MIT License](https://opensource.org/licenses/MIT).
