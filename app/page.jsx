@@ -7,11 +7,11 @@ import Loadingpage from "@/components/Loadingpage";
 export default function Home() {
   const { status, data: session } = useSession();
 
-  if (status == "authenticated") {
+  if (status === "authenticated") {
     return <Homepage />;
-  } else if (status == "unauthenticated") {
+  } else if (status === "unauthenticated") {
     return <Loginpage />;
-  } else if (status == "loading") {
+  } else if (status === "loading") {
     return <Loadingpage />;
   }
 }

@@ -5,7 +5,7 @@ import User from '../../../models/Users';
 import { getServerSession } from 'next-auth/next';
 import { authOptions } from '../auth/[...nextauth]/route';
 
-export async function GET(req) {
+export async function GET() {
   const session = await getServerSession(authOptions);
   if (!session) {
     return new Response(JSON.stringify({ error: 'Unauthorized' }), { status: 401 });
