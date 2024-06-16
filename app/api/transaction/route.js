@@ -25,7 +25,7 @@ export async function POST(req) {
     return new Response(JSON.stringify({ error: 'Unauthorized' }), { status: 401 });
   }
 
-  await connectToDatabase();
+  await connectDB();
   
   const user = await User.findOne({ email: session.user.email });
   const { amount, description } = await req.json();
