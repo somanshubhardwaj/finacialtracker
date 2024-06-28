@@ -16,7 +16,7 @@ To run the Finance Tracker App locally, follow these steps:
 1. Clone the repository:
 
     ```bash
-    git clone https://github.com/your-username/finance-tracker-app.git
+    git clone https://github.com/somanshubhardwaj/finance-tracker-app.git
     ```
 
 2. Install dependencies:
@@ -46,6 +46,10 @@ To run the Finance Tracker App locally, follow these steps:
 
 5. Open [http://localhost:3000](http://localhost:3000) in your browser to access the app.
 
+
+
+
+
 ### Usage
 
 Once the app is running, you can perform the following actions:
@@ -64,3 +68,5 @@ Contributions to the Finance Tracker App are welcome! If you'd like to contribut
 ### License
 
 The Finance Tracker App is open source and released under the [MIT License](https://opensource.org/licenses/MIT).
+
+###### This project failed to deploy on vercel but is perfectly working on azure cloud service
