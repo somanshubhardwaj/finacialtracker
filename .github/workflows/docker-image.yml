@@ -3,7 +3,11 @@ name: Build and Push Docker Image
 on:
   push:
     branches:
-      - main  # Trigger on pushes to the main branch; adjust as needed
+      - master
+  pull_request:
+    types: [opened, synchronize, reopened, closed]
+    branches:
+      - master
 
 jobs:
   build:
