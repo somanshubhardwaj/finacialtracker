@@ -1,5 +1,6 @@
 # Finance Tracker App
 
+
 ## Overview
 
 The Finance Tracker App is a web application built with Next.js, a React framework for server-side rendering. It allows users to track their financial transactions and manage their expenses.
