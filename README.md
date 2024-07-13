@@ -70,4 +70,3 @@ Contributions to the Finance Tracker App are welcome! If you'd like to contribut
 
 The Finance Tracker App is open source and released under the [MIT License](https://opensource.org/licenses/MIT).
 
-###### This project failed to deploy on vercel but is perfectly working on azure cloud service
